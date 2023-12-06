@@ -1,4 +1,4 @@
-package application
+package application_test
 
 import (
 	"github.com/codeedu/go-hexagonal/application"
@@ -9,7 +9,7 @@ import (
 func TestProduct_Enable(t *testing.T) {
 	product := application.Product{}
 	product.Name = "Hello"
-	product.Status = DISABLED
+	product.Status = application.DISABLED
 	product.Price = 10
 
 	err := product.Enable()
